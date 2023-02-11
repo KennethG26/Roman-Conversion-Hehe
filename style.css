@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Nunito;
+}
+body {
+    background-color: #152238;
+}
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Header h2{
+    color: white;
+    margin: 1rem;
+}
+.Header img{
+    width: 30%;
+    margin: 1rem;
+    border-radius: 8px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.main p{
+    color: white;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.main input{
+    width: 300px;
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 50px;
+}
+.main button{
+    font-size:16px;
+    padding: 8px;
+    margin-left: 1rem;
+    border-radius: 10px;
+    background-color: #111;
+    color: white;
+    border-style: solid;
+    border-color: #111;
+    transition: 0.14s;
+}
+.main button:hover{
+    background-color: #fff;
+    color: #111;
+    border-color: #fff;
+}
+.main button:active{
+    opacity: 0.4;
+}
+
+.artist-main-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.Artist-Header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.artist-container{
+    width: 100%;
+    margin: 2rem;
+}
+.artist-pic-1 img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor:pointer;
+    filter: gray;
+	user-select: none;
+	transition: .5s;
+    filter: grayscale(1);
+}
+.artist-pic-1 img:hover{
+    filter: grayscale(0);
+	transform: scale(1.10);
+}
+
+.artist-name-1 p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.artist-role-1{
+    color: #fff;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 700px) {
+    .Header img{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main form{
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .main button{
+        margin: 2rem;
+    }
+    .artist-main-container{
+        height: 70%;
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .artist-container{
+        align-items: center;
+        justify-content: content;
+    }
+    .artist-header{
+        margin: 0 auto;
+    }
+
+}
